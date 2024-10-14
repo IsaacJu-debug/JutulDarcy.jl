@@ -12,7 +12,7 @@ case = setup_case_from_data_file(data);
 # ## Unpack the case to see basic data structures
 model = case.model
 parameters = case.parameters
-forces = case.forces
+forces = case.forcesP
 dt = case.dt;
 # ## Plot the reservoir mesh, wells and faults
 # We compose a few different plotting calls together to make a plot that shows
