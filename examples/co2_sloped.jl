@@ -12,7 +12,7 @@
 use_immiscible = false
 using Jutul, JutulDarcy
 using HYPRE
-using GLMakie
+
 nx = 100
 nz = 50
 Darcy, bar, kg, meter, day, yr = si_units(:darcy, :bar, :kilogram, :meter, :day, :year)
@@ -261,6 +261,8 @@ wd, states, t = simulate_reservoir(state0, model, dt,
 # The aquifer gives some degree of passive flow through the domain, ensuring
 # that much of the dissolved CO2 will leave the reservoir by the end of the
 # injection period.
+
+#=
 using GLMakie
 function plot_co2!(fig, ix, x, title = "")
     ax = Axis3(fig[ix, 1],
@@ -383,3 +385,4 @@ plot_mesh!(ax2, mesh, cells = findall(is_inside), alpha = 0.5)
 ax2.azimuth[] = 1.5*π
 ax2.elevation[] = 0.0
 fig
+=#
