@@ -10,7 +10,7 @@
 # model present in the compositional version (i.e. no solubility of CO2 in
 # brine, and no vaporization of water in the vapor phase).
 use_immiscible = false
-using Jutul, JutulDarcy
+using Jutul, JutulDarcy, GLMakie
 using HYPRE
 
 nx = 100
