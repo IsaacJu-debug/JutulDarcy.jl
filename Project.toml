@@ -50,7 +50,7 @@ JutulDarcyPartitionedArraysExt = ["PartitionedArrays", "MPI", "HYPRE"]
 [compat]
 AMGX = "0.2"
 Artifacts = "1"
-CUDA = "5"
+CUDA = "5, 6"
 DataStructures = "0.18.13"
 Dates = "1"
 DelimitedFiles = "1.6"
